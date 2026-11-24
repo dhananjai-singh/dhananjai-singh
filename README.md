@@ -4,9 +4,9 @@ I'm a CS student, and most of my time goes into medical tech: models and small h
 
 ### What I'm working on
 
-**[Diabetic Retinopathy Detection](https://github.com/dhananjai-singh/Diabetic-Retinopathy-Detection)**
-Grading diabetic retinopathy (stages 0 to 4) from retinal fundus photos. I trained a custom CNN and a ResNet-50 on the APTOS 2019 dataset. The classes are very imbalanced, so a lot of the work went into the loss function. Grad-CAM heatmaps show which part of the retina the model based its answer on. There's a Gradio demo and a Next.js dashboard on top.
-PyTorch, OpenCV, Gradio, Next.js
+**[Unmute](https://github.com/dhananjai-singh/Unmute)**
+Sign language to speech in real time, so a Deaf signer can be understood by someone who doesn't sign. The prototype tracks markers on the hands with OpenCV, feeds 30-frame sequences to a Keras classifier, and only speaks once the prediction is confident and stable. It won 1st place out of 95 teams at the V-Medithon Health-Tech Hackathon. I'm rebuilding it now.
+Python, OpenCV, TensorFlow
 
 **[Counterswing](https://github.com/dhananjai-singh/Counterswing)**
 A wearable that measures how well your arms and legs stay in sync while you walk. Reduced or out-of-phase arm swing can be an early sign of some gait disorders. An insole picks up heel strikes, a wrist IMU tracks arm swing, and the two boards talk over ESP-NOW. Each stride gets a phase angle and a coordination score, and a Random Forest running on the phone classifies the walk.
@@ -14,6 +14,7 @@ ESP32, Flutter, scikit-learn, BLE
 
 ### Other things I've built
 
+- [Diabetic Retinopathy Detection](https://github.com/dhananjai-singh/Diabetic-Retinopathy-Detection): grades diabetic retinopathy from retinal photos with a ResNet-50, with Grad-CAM heatmaps showing where it looked
 - [ClaimRight](https://github.com/dhananjai-singh/ClaimRight): checks the deductions in Indian health-insurance claims against IRDAI rules and drafts the complaint letter
 - [Praman](https://github.com/dhananjai-singh/Praman): a rebuilt Madhya Pradesh certificate portal that gives instant, explained decisions on the legal deadline
 - [CertChain](https://github.com/dhananjai-singh/CertChain): academic certificates on a blockchain, verifiable by QR code
